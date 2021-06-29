@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var session: SessionStore
+    
+    func listen(){
+        session.listen()
+    }
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        Group{
+            if(session.session != nil){
+//                HomeView()// user인 경우?
+                
+                //testing start
+                Home()
+                //testing end
+            } else {
+                SignInView()
+            }
+        }.onAppear(perform: listen)
     }
 }
 
@@ -19,3 +35,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

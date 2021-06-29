@@ -3,23 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		443BDB21268AC0CC00A6F25E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BDB20268AC0CC00A6F25E /* Main.swift */; };
+		443E7416268B233A00E650AF /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E7415268B233A00E650AF /* SideMenu.swift */; };
 		447EE6CF268AB94A00658654 /* ALOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6CE268AB94A00658654 /* ALOApp.swift */; };
 		447EE6D1268AB94A00658654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6D0268AB94A00658654 /* ContentView.swift */; };
 		447EE6D3268AB94D00658654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447EE6D2268AB94D00658654 /* Assets.xcassets */; };
 		447EE6D6268AB94D00658654 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447EE6D5268AB94D00658654 /* Preview Assets.xcassets */; };
+		447EE6E3268ABA9A00658654 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6E2268ABA9A00658654 /* AuthService.swift */; };
+		447EE6E6268ABAB200658654 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6E5268ABAB200658654 /* StorageService.swift */; };
+		447EE6E8268ABABF00658654 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6E7268ABABF00658654 /* SessionStore.swift */; };
+		447EE6EA268ABAD100658654 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6E9268ABAD100658654 /* UserModel.swift */; };
+		447EE6EC268ABADB00658654 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6EB268ABADB00658654 /* ImagePicker.swift */; };
+		447EE6EE268ABB1600658654 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6ED268ABB1600658654 /* SignInView.swift */; };
+		447EE6F0268ABB3A00658654 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6EF268ABB3A00658654 /* Extensions.swift */; };
+		447EE6F2268ABB4500658654 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F1268ABB4500658654 /* SignUpView.swift */; };
+		447EE6F4268ABB4F00658654 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F3268ABB4F00658654 /* HomeView.swift */; };
+		447EE6F6268ABB5A00658654 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F5268ABB5A00658654 /* Search.swift */; };
+		447EE6F8268ABB6300658654 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F7268ABB6300658654 /* Add.swift */; };
+		447EE6FA268ABB6D00658654 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F9268ABB6D00658654 /* Notifications.swift */; };
+		447EE6FC268ABB7400658654 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6FB268ABB7400658654 /* Profile.swift */; };
+		447EE6FE268ABBB700658654 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6FD268ABBB700658654 /* FormField.swift */; };
+		447EE700268ABBC200658654 /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6FF268ABBC200658654 /* ButtonModifiers.swift */; };
+		447EE702268ABC7300658654 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 447EE701268ABC7300658654 /* GoogleService-Info.plist */; };
+		44BD2495268B02B2004DB80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BD2494268B02B2004DB80A /* LaunchScreen.storyboard */; };
+		44BD2497268B09F9004DB80A /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD2496268B09F9004DB80A /* LoadingScreen.swift */; };
+		44BD2499268B0ED5004DB80A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD2498268B0ED5004DB80A /* Home.swift */; };
+		44BD249B268B0EF9004DB80A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD249A268B0EF9004DB80A /* HomeViewModel.swift */; };
+		6297411F7D869C2E285E887B /* Pods_ALO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CFB60810A5FA15C552AFC9 /* Pods_ALO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03CFB60810A5FA15C552AFC9 /* Pods_ALO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		278020DC700644727E7A1A2E /* Pods-ALO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALO.debug.xcconfig"; path = "Target Support Files/Pods-ALO/Pods-ALO.debug.xcconfig"; sourceTree = "<group>"; };
+		443BDB20268AC0CC00A6F25E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		443E7415268B233A00E650AF /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		447EE6CB268AB94A00658654 /* ALO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		447EE6CE268AB94A00658654 /* ALOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALOApp.swift; sourceTree = "<group>"; };
 		447EE6D0268AB94A00658654 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		447EE6D2268AB94D00658654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		447EE6D5268AB94D00658654 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		447EE6D7268AB94D00658654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447EE6E2268ABA9A00658654 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		447EE6E5268ABAB200658654 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		447EE6E7268ABABF00658654 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		447EE6E9268ABAD100658654 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		447EE6EB268ABADB00658654 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		447EE6ED268ABB1600658654 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		447EE6EF268ABB3A00658654 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		447EE6F1268ABB4500658654 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		447EE6F3268ABB4F00658654 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		447EE6F5268ABB5A00658654 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		447EE6F7268ABB6300658654 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
+		447EE6F9268ABB6D00658654 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		447EE6FB268ABB7400658654 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		447EE6FD268ABBB700658654 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		447EE6FF268ABBC200658654 /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
+		447EE701268ABC7300658654 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44BD2494268B02B2004DB80A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44BD2496268B09F9004DB80A /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		44BD2498268B0ED5004DB80A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		44BD249A268B0EF9004DB80A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		ED27C7040853BAD6EB3F0B63 /* Pods-ALO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALO.release.xcconfig"; path = "Target Support Files/Pods-ALO/Pods-ALO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6297411F7D869C2E285E887B /* Pods_ALO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +87,8 @@
 			children = (
 				447EE6CD268AB94A00658654 /* ALO */,
 				447EE6CC268AB94A00658654 /* Products */,
+				EC0880B43ECC3FA070B98FBC /* Pods */,
+				CA64D2D4815CD9D4E9694E88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +103,12 @@
 		447EE6CD268AB94A00658654 /* ALO */ = {
 			isa = PBXGroup;
 			children = (
+				447EE701268ABC7300658654 /* GoogleService-Info.plist */,
+				447EE6E1268ABA6F00658654 /* Component */,
+				447EE6E0268ABA6900658654 /* Views */,
+				447EE6DF268ABA5F00658654 /* Utilities */,
+				447EE6DE268ABA5300658654 /* Models */,
+				447EE6DD268ABA4B00658654 /* ViewModel */,
 				447EE6CE268AB94A00658654 /* ALOApp.swift */,
 				447EE6D0268AB94A00658654 /* ContentView.swift */,
 				447EE6D2268AB94D00658654 /* Assets.xcassets */,
@@ -69,6 +126,79 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		447EE6DD268ABA4B00658654 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				447EE6E2268ABA9A00658654 /* AuthService.swift */,
+				447EE6E5268ABAB200658654 /* StorageService.swift */,
+				447EE6E7268ABABF00658654 /* SessionStore.swift */,
+				44BD249A268B0EF9004DB80A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		447EE6DE268ABA5300658654 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				447EE6E9268ABAD100658654 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		447EE6DF268ABA5F00658654 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				447EE6EB268ABADB00658654 /* ImagePicker.swift */,
+				447EE6EF268ABB3A00658654 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		447EE6E0268ABA6900658654 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				447EE6ED268ABB1600658654 /* SignInView.swift */,
+				447EE6F1268ABB4500658654 /* SignUpView.swift */,
+				447EE6F3268ABB4F00658654 /* HomeView.swift */,
+				447EE6F5268ABB5A00658654 /* Search.swift */,
+				447EE6F7268ABB6300658654 /* Add.swift */,
+				447EE6F9268ABB6D00658654 /* Notifications.swift */,
+				447EE6FB268ABB7400658654 /* Profile.swift */,
+				443BDB20268AC0CC00A6F25E /* Main.swift */,
+				44BD2494268B02B2004DB80A /* LaunchScreen.storyboard */,
+				44BD2496268B09F9004DB80A /* LoadingScreen.swift */,
+				44BD2498268B0ED5004DB80A /* Home.swift */,
+				443E7415268B233A00E650AF /* SideMenu.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		447EE6E1268ABA6F00658654 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				447EE6FD268ABBB700658654 /* FormField.swift */,
+				447EE6FF268ABBC200658654 /* ButtonModifiers.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		CA64D2D4815CD9D4E9694E88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03CFB60810A5FA15C552AFC9 /* Pods_ALO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC0880B43ECC3FA070B98FBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				278020DC700644727E7A1A2E /* Pods-ALO.debug.xcconfig */,
+				ED27C7040853BAD6EB3F0B63 /* Pods-ALO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 447EE6DA268AB94D00658654 /* Build configuration list for PBXNativeTarget "ALO" */;
 			buildPhases = (
+				E06076585730AE58C346A63F /* [CP] Check Pods Manifest.lock */,
 				447EE6C7268AB94A00658654 /* Sources */,
 				447EE6C8268AB94A00658654 /* Frameworks */,
 				447EE6C9268AB94A00658654 /* Resources */,
+				D21683705A494433F1A9CB6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +259,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				447EE6D6268AB94D00658654 /* Preview Assets.xcassets in Resources */,
+				44BD2495268B02B2004DB80A /* LaunchScreen.storyboard in Resources */,
 				447EE6D3268AB94D00658654 /* Assets.xcassets in Resources */,
+				447EE702268ABC7300658654 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D21683705A494433F1A9CB6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALO/Pods-ALO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALO/Pods-ALO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALO/Pods-ALO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06076585730AE58C346A63F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ALO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		447EE6C7268AB94A00658654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				443BDB21268AC0CC00A6F25E /* Main.swift in Sources */,
+				447EE6E3268ABA9A00658654 /* AuthService.swift in Sources */,
+				44BD2499268B0ED5004DB80A /* Home.swift in Sources */,
+				447EE6FC268ABB7400658654 /* Profile.swift in Sources */,
+				447EE6FE268ABBB700658654 /* FormField.swift in Sources */,
+				447EE6F0268ABB3A00658654 /* Extensions.swift in Sources */,
+				447EE6E8268ABABF00658654 /* SessionStore.swift in Sources */,
+				447EE6E6268ABAB200658654 /* StorageService.swift in Sources */,
+				447EE6EC268ABADB00658654 /* ImagePicker.swift in Sources */,
+				447EE6F4268ABB4F00658654 /* HomeView.swift in Sources */,
 				447EE6D1268AB94A00658654 /* ContentView.swift in Sources */,
+				443E7416268B233A00E650AF /* SideMenu.swift in Sources */,
+				447EE6F2268ABB4500658654 /* SignUpView.swift in Sources */,
+				447EE6FA268ABB6D00658654 /* Notifications.swift in Sources */,
+				447EE700268ABBC200658654 /* ButtonModifiers.swift in Sources */,
+				447EE6EA268ABAD100658654 /* UserModel.swift in Sources */,
+				447EE6F6268ABB5A00658654 /* Search.swift in Sources */,
+				44BD249B268B0EF9004DB80A /* HomeViewModel.swift in Sources */,
+				447EE6EE268ABB1600658654 /* SignInView.swift in Sources */,
+				447EE6F8268ABB6300658654 /* Add.swift in Sources */,
 				447EE6CF268AB94A00658654 /* ALOApp.swift in Sources */,
+				44BD2497268B09F9004DB80A /* LoadingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +460,7 @@
 		};
 		447EE6DB268AB94D00658654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278020DC700644727E7A1A2E /* Pods-ALO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -285,6 +482,7 @@
 		};
 		447EE6DC268AB94D00658654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED27C7040853BAD6EB3F0B63 /* Pods-ALO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
