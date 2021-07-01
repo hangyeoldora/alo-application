@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct SignInView: View {
+    // 07.01 add
+    @EnvironmentObject var session: SessionStore
+    
+    func listen(){
+        session.listen()
+    }
+    
     @State private var email: String = ""
     @State private var password: String = ""
     
@@ -21,7 +28,7 @@ struct SignInView: View {
             password.trimmingCharacters(in: .whitespaces).isEmpty
         {
             
-            return "Please fill in all fileds"
+            return "모든 칸을 채워주세요."
         }
         return nil
     }
@@ -53,32 +60,51 @@ struct SignInView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20){
-                Image("alo_main_logo").font(.system(size: 60, weight: .black, design: .monospaced))
+                Image("alo_main_logo").font(.system(size: 60, weight: .black, design: .monospaced)).padding(.bottom, 15)
                 
-                VStack(alignment: .leading){
-                    Text("Welcome ALO").font(.system(size:32, weight: .heavy))
-                    Text("SignIn To Continue").font(.system(size:16, weight: .medium))
+                VStack(alignment: .center){
+                    Text("Welcome! We are ALO.").font(.system(size:25, weight: .medium)).foregroundColor(.pink)
+//                    Text("SignIn To Continue").font(.system(size:16, weight: .medium))
+                }.padding(.bottom, 30)
+                Spacer()
+                VStack(alignment: .center){
+                    FormField(value: $email, icon: "envelope.fill", placeholder: "E-mail").foregroundColor(.pink)
+                    FormField(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true).foregroundColor(.pink)
                 }
-                    FormField(value: $email, icon: "envelope.fill", placeholder: "E-mail")
-                    FormField(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true)
-                    
 
-                    Button(action: signIn){
-                        Text("Sign In").font(.title)
-                            .modifier(ButtonModifiers())
+                // 07.01 default setup
+//                    Button(action: signIn){
+//                        Text("Login").font(.title)
+//                            .modifier(TransParentButtonModifiers())
+//                    }.alert(isPresented: $showingAlert){
+//                        Alert(title: Text(alertTitle), message: Text(error), dismissButton:                               .default(Text("OK")))
+//                    }
+                
+                Button(action: {signIn()
+                    listen()
+                }){
+                        Text("Login").font(.title)
+                            .modifier(TransParentButtonModifiers())
                     }.alert(isPresented: $showingAlert){
                         Alert(title: Text(alertTitle), message: Text(error), dismissButton: .default(Text("OK")))
                     }
+                Spacer()
+                NavigationLink(destination: SNSSignUpView()) {
+                    Text("다른 방법으로 로그인")
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundColor(.pink).opacity(10)
+                }
+                
                 HStack{
                     Text("New?")
                     NavigationLink(destination: SignUpView()) {
                         Text("Create an account")
                             .font(.system(size: 20, weight: .semibold))
-                            .foregroundColor(.black)
-                    }
+                            .foregroundColor(.pink).opacity(10)
+                    }.navigationTitle("")
                 }
             }.padding()
-        }
+        }.accentColor( .pink)
     }
 }
 

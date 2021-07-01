@@ -14,16 +14,21 @@ struct HomeView: View {
     var body: some View {
         
         VStack{
+//            Button(action: session.logout){
+//                Text("Logout").font(.title)
+////                    .modifier(ButtonModifiers())
+//                    .background(Color.pink.opacity(3))
+//                    .font(.system(size:20, weight: .bold))
+//                    .frame(width:150, height:100, alignment: .center)
+//                    .foregroundColor(.black)
+//            }
             CustomTabView()
-            Button(action: session.logout){
-                Text("Logout").font(.title)
-                    .modifier(ButtonModifiers())
-            }
         }
     }
 }
 
 var tabs = ["house.fill", "magnifyingglass", "camera.viewfinder", "heart.fill", "person.fill"]
+
 struct CustomTabView: View {
     @State var selectedTab = "house.fill"
     @State var edge = UIApplication.shared.windows.first?.safeAreaInsets
@@ -32,18 +37,21 @@ struct CustomTabView: View {
 
     //ios 14 스와이프 기능 추가 14미만이면 스위치 등
     ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom)){
-        TabView(selection: $selectedTab) {
-            Main()
-                .tag("house.fill")
-            Search()
-                .tag("magnifyingglass")
-            Add()
-                .tag("camera.viewfinder")
-            Notifications()
-                .tag("heart.fill")
-            Profile()
-                .tag("person.fill")
-        }
+        
+        NavigationView{
+            TabView(selection: $selectedTab) {
+                Main()
+                    .tag("house.fill")
+                Search()
+                    .tag("magnifyingglass")
+                Post()
+                    .tag("camera.viewfinder")
+                Notifications()
+                    .tag("heart.fill")
+                Profile()
+                    .tag("person.fill")
+            }
+        }.accentColor(.pink)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         .ignoresSafeArea(.all, edges: .bottom)
         

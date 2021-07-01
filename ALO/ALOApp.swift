@@ -6,9 +6,9 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 import Firebase
+import GoogleSignIn
+
 
 @main
 struct ALOApp: App {
@@ -23,16 +23,27 @@ struct ALOApp: App {
         }
     }
 }
+
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
         launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        
+
         print("Firebase...")
         FirebaseApp.configure()
-        
-        
-        sleep(3)
+
         return true
     }
 }
 
+
+//원본
+//class AppDelegate: NSObject, UIApplicationDelegate {
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions
+//        launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+//
+//        print("Firebase...")
+//        FirebaseApp.configure()
+//
+//        return true
+//    }
+//}

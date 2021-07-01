@@ -13,7 +13,6 @@ import FirebaseFirestore
 
 class AuthService {
     static var storeRoot = Firestore.firestore()
-    
     static func getUserId(userId: String) -> DocumentReference {
         return storeRoot.collection("users").document(userId)
     }

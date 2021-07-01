@@ -54,7 +54,16 @@ struct Home: View {
                 
                 Divider()
                 
-                Spacer()
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    
+                    VStack(spacing: 25){
+                        ForEach(HomeModel.items){item in
+                            
+                            // Item View...
+                            Text(item.item_name)
+                        }
+                    }
+                })
             }
             
             // Side Menu.....
@@ -91,6 +100,10 @@ struct Home: View {
 //            HomeModel.locationManager.requestWhenInUseAuthorization()
 //            // Modifying Info.plist...
         })
+        Button(action: session.logout){
+            Text("Logout").font(.title)
+                .modifier(ButtonModifiers())
+        }
     }
 }
 

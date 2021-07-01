@@ -10,5 +10,7 @@ target 'ALO' do
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   pod 'URLImage'
+  pod 'ExytePopupView'
+  pod 'GoogleSignIn'
 
 end

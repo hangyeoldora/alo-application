@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4428E4FE268BA8BB00293E0B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4428E4FD268BA8BB00293E0B /* SDWebImageSwiftUI */; };
+		4428E500268BA8D200293E0B /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428E4FF268BA8D200293E0B /* ProfileHeader.swift */; };
 		443BDB21268AC0CC00A6F25E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BDB20268AC0CC00A6F25E /* Main.swift */; };
-		443E7416268B233A00E650AF /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E7415268B233A00E650AF /* SideMenu.swift */; };
+		443E7418268B32F500E650AF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443E7417268B32F500E650AF /* Item.swift */; };
+		445F5AF3268DA1CA004ABE50 /* SNSSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AF2268DA1CA004ABE50 /* SNSSignUpView.swift */; };
+		445F5AF7268DAD8F004ABE50 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AF6268DAD8F004ABE50 /* SearchBar.swift */; };
+		445F5AF9268DAE3C004ABE50 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AF8268DAE3C004ABE50 /* SearchService.swift */; };
+		445F5AFB268DB094004ABE50 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AFA268DB094004ABE50 /* UserProfile.swift */; };
 		447EE6CF268AB94A00658654 /* ALOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6CE268AB94A00658654 /* ALOApp.swift */; };
 		447EE6D1268AB94A00658654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6D0268AB94A00658654 /* ContentView.swift */; };
 		447EE6D3268AB94D00658654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447EE6D2268AB94D00658654 /* Assets.xcassets */; };
@@ -23,24 +29,34 @@
 		447EE6F2268ABB4500658654 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F1268ABB4500658654 /* SignUpView.swift */; };
 		447EE6F4268ABB4F00658654 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F3268ABB4F00658654 /* HomeView.swift */; };
 		447EE6F6268ABB5A00658654 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F5268ABB5A00658654 /* Search.swift */; };
-		447EE6F8268ABB6300658654 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F7268ABB6300658654 /* Add.swift */; };
+		447EE6F8268ABB6300658654 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F7268ABB6300658654 /* Post.swift */; };
 		447EE6FA268ABB6D00658654 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6F9268ABB6D00658654 /* Notifications.swift */; };
 		447EE6FC268ABB7400658654 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6FB268ABB7400658654 /* Profile.swift */; };
 		447EE6FE268ABBB700658654 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6FD268ABBB700658654 /* FormField.swift */; };
 		447EE700268ABBC200658654 /* ButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6FF268ABBC200658654 /* ButtonModifiers.swift */; };
-		447EE702268ABC7300658654 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 447EE701268ABC7300658654 /* GoogleService-Info.plist */; };
+		44801124268B89E200105A50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44801123268B89E200105A50 /* GoogleService-Info.plist */; };
 		44BD2495268B02B2004DB80A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44BD2494268B02B2004DB80A /* LaunchScreen.storyboard */; };
 		44BD2497268B09F9004DB80A /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD2496268B09F9004DB80A /* LoadingScreen.swift */; };
-		44BD2499268B0ED5004DB80A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD2498268B0ED5004DB80A /* Home.swift */; };
-		44BD249B268B0EF9004DB80A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD249A268B0EF9004DB80A /* HomeViewModel.swift */; };
+		44C07A87268D75DF00FBC2BB /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C07A86268D75DF00FBC2BB /* ProfileService.swift */; };
+		44C07A89268D76A400FBC2BB /* PostCardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C07A88268D76A400FBC2BB /* PostCardService.swift */; };
+		44C07A8B268D7C3F00FBC2BB /* TransParentButtonModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C07A8A268D7C3F00FBC2BB /* TransParentButtonModifiers.swift */; };
+		44C07A8D268D853E00FBC2BB /* PostCardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C07A8C268D853E00FBC2BB /* PostCardImage.swift */; };
+		44C07A8F268D87A000FBC2BB /* PostCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C07A8E268D87A000FBC2BB /* PostCard.swift */; };
+		44C63552268B541900D80205 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C63551268B541900D80205 /* PostModel.swift */; };
+		44C63554268B57F200D80205 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C63553268B57F200D80205 /* PostService.swift */; };
 		6297411F7D869C2E285E887B /* Pods_ALO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03CFB60810A5FA15C552AFC9 /* Pods_ALO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03CFB60810A5FA15C552AFC9 /* Pods_ALO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		278020DC700644727E7A1A2E /* Pods-ALO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALO.debug.xcconfig"; path = "Target Support Files/Pods-ALO/Pods-ALO.debug.xcconfig"; sourceTree = "<group>"; };
+		4428E4FF268BA8D200293E0B /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		443BDB20268AC0CC00A6F25E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		443E7415268B233A00E650AF /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		443E7417268B32F500E650AF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		445F5AF2268DA1CA004ABE50 /* SNSSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSSignUpView.swift; sourceTree = "<group>"; };
+		445F5AF6268DAD8F004ABE50 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		445F5AF8268DAE3C004ABE50 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		445F5AFA268DB094004ABE50 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		447EE6CB268AB94A00658654 /* ALO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		447EE6CE268AB94A00658654 /* ALOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALOApp.swift; sourceTree = "<group>"; };
 		447EE6D0268AB94A00658654 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,16 +73,21 @@
 		447EE6F1268ABB4500658654 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		447EE6F3268ABB4F00658654 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		447EE6F5268ABB5A00658654 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
-		447EE6F7268ABB6300658654 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
+		447EE6F7268ABB6300658654 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		447EE6F9268ABB6D00658654 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		447EE6FB268ABB7400658654 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		447EE6FD268ABBB700658654 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		447EE6FF268ABBC200658654 /* ButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiers.swift; sourceTree = "<group>"; };
-		447EE701268ABC7300658654 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44801123268B89E200105A50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44BD2494268B02B2004DB80A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44BD2496268B09F9004DB80A /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
-		44BD2498268B0ED5004DB80A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		44BD249A268B0EF9004DB80A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		44C07A86268D75DF00FBC2BB /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		44C07A88268D76A400FBC2BB /* PostCardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardService.swift; sourceTree = "<group>"; };
+		44C07A8A268D7C3F00FBC2BB /* TransParentButtonModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransParentButtonModifiers.swift; sourceTree = "<group>"; };
+		44C07A8C268D853E00FBC2BB /* PostCardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardImage.swift; sourceTree = "<group>"; };
+		44C07A8E268D87A000FBC2BB /* PostCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCard.swift; sourceTree = "<group>"; };
+		44C63551268B541900D80205 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		44C63553268B57F200D80205 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		ED27C7040853BAD6EB3F0B63 /* Pods-ALO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALO.release.xcconfig"; path = "Target Support Files/Pods-ALO/Pods-ALO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4428E4FE268BA8BB00293E0B /* SDWebImageSwiftUI in Frameworks */,
 				6297411F7D869C2E285E887B /* Pods_ALO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,12 +125,12 @@
 		447EE6CD268AB94A00658654 /* ALO */ = {
 			isa = PBXGroup;
 			children = (
-				447EE701268ABC7300658654 /* GoogleService-Info.plist */,
+				44801123268B89E200105A50 /* GoogleService-Info.plist */,
 				447EE6E1268ABA6F00658654 /* Component */,
 				447EE6E0268ABA6900658654 /* Views */,
 				447EE6DF268ABA5F00658654 /* Utilities */,
 				447EE6DE268ABA5300658654 /* Models */,
-				447EE6DD268ABA4B00658654 /* ViewModel */,
+				447EE6DD268ABA4B00658654 /* Services */,
 				447EE6CE268AB94A00658654 /* ALOApp.swift */,
 				447EE6D0268AB94A00658654 /* ContentView.swift */,
 				447EE6D2268AB94D00658654 /* Assets.xcassets */,
@@ -126,21 +148,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		447EE6DD268ABA4B00658654 /* ViewModel */ = {
+		447EE6DD268ABA4B00658654 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				447EE6E2268ABA9A00658654 /* AuthService.swift */,
 				447EE6E5268ABAB200658654 /* StorageService.swift */,
 				447EE6E7268ABABF00658654 /* SessionStore.swift */,
-				44BD249A268B0EF9004DB80A /* HomeViewModel.swift */,
+				44C63553268B57F200D80205 /* PostService.swift */,
+				44C07A86268D75DF00FBC2BB /* ProfileService.swift */,
+				44C07A88268D76A400FBC2BB /* PostCardService.swift */,
+				445F5AF8268DAE3C004ABE50 /* SearchService.swift */,
 			);
-			path = ViewModel;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		447EE6DE268ABA5300658654 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				447EE6E9268ABAD100658654 /* UserModel.swift */,
+				443E7417268B32F500E650AF /* Item.swift */,
+				44C63551268B541900D80205 /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,14 +188,14 @@
 				447EE6F1268ABB4500658654 /* SignUpView.swift */,
 				447EE6F3268ABB4F00658654 /* HomeView.swift */,
 				447EE6F5268ABB5A00658654 /* Search.swift */,
-				447EE6F7268ABB6300658654 /* Add.swift */,
+				447EE6F7268ABB6300658654 /* Post.swift */,
 				447EE6F9268ABB6D00658654 /* Notifications.swift */,
 				447EE6FB268ABB7400658654 /* Profile.swift */,
 				443BDB20268AC0CC00A6F25E /* Main.swift */,
 				44BD2494268B02B2004DB80A /* LaunchScreen.storyboard */,
 				44BD2496268B09F9004DB80A /* LoadingScreen.swift */,
-				44BD2498268B0ED5004DB80A /* Home.swift */,
-				443E7415268B233A00E650AF /* SideMenu.swift */,
+				445F5AF2268DA1CA004ABE50 /* SNSSignUpView.swift */,
+				445F5AFA268DB094004ABE50 /* UserProfile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +205,11 @@
 			children = (
 				447EE6FD268ABBB700658654 /* FormField.swift */,
 				447EE6FF268ABBC200658654 /* ButtonModifiers.swift */,
+				4428E4FF268BA8D200293E0B /* ProfileHeader.swift */,
+				44C07A8A268D7C3F00FBC2BB /* TransParentButtonModifiers.swift */,
+				44C07A8C268D853E00FBC2BB /* PostCardImage.swift */,
+				44C07A8E268D87A000FBC2BB /* PostCard.swift */,
+				445F5AF6268DAD8F004ABE50 /* SearchBar.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -211,12 +243,16 @@
 				447EE6C8268AB94A00658654 /* Frameworks */,
 				447EE6C9268AB94A00658654 /* Resources */,
 				D21683705A494433F1A9CB6C /* [CP] Embed Pods Frameworks */,
+				A071CC3A7FD3305625A2893A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ALO;
+			packageProductDependencies = (
+				4428E4FD268BA8BB00293E0B /* SDWebImageSwiftUI */,
+			);
 			productName = ALO;
 			productReference = 447EE6CB268AB94A00658654 /* ALO.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +280,9 @@
 				Base,
 			);
 			mainGroup = 447EE6C2268AB94A00658654;
+			packageReferences = (
+				4428E4FC268BA8BB00293E0B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 447EE6CC268AB94A00658654 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,15 +298,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				447EE6D6268AB94D00658654 /* Preview Assets.xcassets in Resources */,
+				44801124268B89E200105A50 /* GoogleService-Info.plist in Resources */,
 				44BD2495268B02B2004DB80A /* LaunchScreen.storyboard in Resources */,
 				447EE6D3268AB94D00658654 /* Assets.xcassets in Resources */,
-				447EE702268ABC7300658654 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A071CC3A7FD3305625A2893A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALO/Pods-ALO-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ALO/Pods-ALO-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ALO/Pods-ALO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D21683705A494433F1A9CB6C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,26 +370,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C63554268B57F200D80205 /* PostService.swift in Sources */,
 				443BDB21268AC0CC00A6F25E /* Main.swift in Sources */,
+				44C07A8D268D853E00FBC2BB /* PostCardImage.swift in Sources */,
+				44C63552268B541900D80205 /* PostModel.swift in Sources */,
 				447EE6E3268ABA9A00658654 /* AuthService.swift in Sources */,
-				44BD2499268B0ED5004DB80A /* Home.swift in Sources */,
 				447EE6FC268ABB7400658654 /* Profile.swift in Sources */,
 				447EE6FE268ABBB700658654 /* FormField.swift in Sources */,
 				447EE6F0268ABB3A00658654 /* Extensions.swift in Sources */,
+				443E7418268B32F500E650AF /* Item.swift in Sources */,
+				4428E500268BA8D200293E0B /* ProfileHeader.swift in Sources */,
 				447EE6E8268ABABF00658654 /* SessionStore.swift in Sources */,
 				447EE6E6268ABAB200658654 /* StorageService.swift in Sources */,
 				447EE6EC268ABADB00658654 /* ImagePicker.swift in Sources */,
+				445F5AF3268DA1CA004ABE50 /* SNSSignUpView.swift in Sources */,
+				44C07A8F268D87A000FBC2BB /* PostCard.swift in Sources */,
 				447EE6F4268ABB4F00658654 /* HomeView.swift in Sources */,
+				44C07A89268D76A400FBC2BB /* PostCardService.swift in Sources */,
+				445F5AF7268DAD8F004ABE50 /* SearchBar.swift in Sources */,
+				44C07A8B268D7C3F00FBC2BB /* TransParentButtonModifiers.swift in Sources */,
 				447EE6D1268AB94A00658654 /* ContentView.swift in Sources */,
-				443E7416268B233A00E650AF /* SideMenu.swift in Sources */,
+				445F5AF9268DAE3C004ABE50 /* SearchService.swift in Sources */,
 				447EE6F2268ABB4500658654 /* SignUpView.swift in Sources */,
 				447EE6FA268ABB6D00658654 /* Notifications.swift in Sources */,
 				447EE700268ABBC200658654 /* ButtonModifiers.swift in Sources */,
+				44C07A87268D75DF00FBC2BB /* ProfileService.swift in Sources */,
 				447EE6EA268ABAD100658654 /* UserModel.swift in Sources */,
 				447EE6F6268ABB5A00658654 /* Search.swift in Sources */,
-				44BD249B268B0EF9004DB80A /* HomeViewModel.swift in Sources */,
 				447EE6EE268ABB1600658654 /* SignInView.swift in Sources */,
-				447EE6F8268ABB6300658654 /* Add.swift in Sources */,
+				445F5AFB268DB094004ABE50 /* UserProfile.swift in Sources */,
+				447EE6F8268ABB6300658654 /* Post.swift in Sources */,
 				447EE6CF268AB94A00658654 /* ALOApp.swift in Sources */,
 				44BD2497268B09F9004DB80A /* LoadingScreen.swift in Sources */,
 			);
@@ -466,6 +532,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ALO/Preview Content\"";
+				DEVELOPMENT_TEAM = F6WS43TV2J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ALO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -488,6 +555,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ALO/Preview Content\"";
+				DEVELOPMENT_TEAM = F6WS43TV2J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ALO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -524,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4428E4FC268BA8BB00293E0B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4428E4FD268BA8BB00293E0B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4428E4FC268BA8BB00293E0B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 447EE6C3268AB94A00658654 /* Project object */;
 }

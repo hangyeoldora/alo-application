@@ -18,11 +18,7 @@ struct ContentView: View {
         
         Group{
             if(session.session != nil){
-//                HomeView()// user인 경우?
-                
-                //testing start
-                Home()
-                //testing end
+                HomeView()// user인 경우?
             } else {
                 SignInView()
             }
