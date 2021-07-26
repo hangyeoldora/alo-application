@@ -76,7 +76,7 @@ struct SignUpView: View {
         ScrollView {
             VStack(spacing: 20){
                 VStack(alignment: .center){
-                    Text("SignUp To Start").font(.system(size:32, weight: .regular)).foregroundColor(.pink)
+                    Text("SignUp To Start").font(.system(size:22, weight: .medium)).foregroundColor(.pink)
                 }
                 
                 VStack{
@@ -90,10 +90,9 @@ struct SignUpView: View {
                                     self.showingActionSheet = true
                                 }
                         } else {
-                            Image(systemName: "person.circle.fill")
+                            Image(systemName: "person.crop.circle.fill.badge.plus")
                                 .resizable()
-                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                                .frame(width: 100, height: 100)
+                                .frame(width: 120, height: 100)
                                 .padding(.top, 20)
                                 .foregroundColor(.pink)
                                 .onTapGesture {
@@ -102,13 +101,13 @@ struct SignUpView: View {
                         }
                     }
                 }
-                
+                Spacer()
                 Group{
                     FormField(value: $username, icon: "person.fill", placeholder: "username")
                     FormField(value: $email, icon: "envelope.fill", placeholder: "E-mail")
                     FormField(value: $password, icon: "lock.fill", placeholder: "Password", isSecure: true)
                 }
-                    
+                Spacer()
                 NavigationLink(destination: SignInView(), isActive: $isLinkActive){
                 Button(action: {signUp()
                     self.isLinkActive = true

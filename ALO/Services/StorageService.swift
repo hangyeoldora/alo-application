@@ -18,6 +18,16 @@ class StorageService {
 //    storage.reference(forURL: "gs://alo-ios-7c6e7.appspot.com/profile/profile")
     static var storageProfile = storageRoot.child("profile")
     
+    // Market DB
+//    1. 변수 생성
+//    2. func storage~Id 생성
+    static var storageMarket = storageRoot.child("m_posts")
+    
+    static func storageMarketId(postId:String) -> StorageReference {
+        return storagePost.child(postId)
+    }
+
+    
     // Post DB
 //    1. 변수 생성
 //    2. func storage~Id 생성
@@ -119,8 +129,60 @@ class StorageService {
                     }
                 }
             }
-    }
+        }
     
     // post 내용 저장하는 함수 생성 끝
-}
+    }
+    
+    
+    // market 내용 저장하는 함수 생성 시작, 해당 변수를 postservice 함수 내 넣기
+    static func saveMarketPhoto(userId:String, title: String, price: Int, status: String, content: String, postId: String, imageData: Data, metadata:StorageMetadata,
+                                storageMarketRef: StorageReference, onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void) {
+        
+        
+        storageMarketRef.putData(imageData, metadata: metadata) {
+            (StorageMetadata, error) in
+            
+            if error != nil {
+                onError(error!.localizedDescription)
+                return
+            }
+            
+            storageMarket.putData(imageData, metadata: metadata){
+                
+                (StorageMetadata, error) in
+                
+                if error != nil {
+                    onError(error!.localizedDescription)
+                    return
+                }
+                
+                storageMarket.downloadURL{
+                    (url, error) in
+                    if let metaImageUrl = url?.absoluteString {
+                        let firestoreMarketRef = MarketService.M_PostUserId(userId: userId).collection("m_posts").document(postId)
+                        
+                        let m_post = MarketModel.init(title: title, price: 0, status: status, content: content, likes: [:], geoLocation: "", ownerId: userId, postId: postId, username: Auth.auth().currentUser!.displayName!, profile: Auth.auth().currentUser!.photoURL!.absoluteString, mediaUrl: metaImageUrl, date: Date().timeIntervalSince1970, likeCount: 0)
+                        
+                        guard let dict = try? m_post.asDictionary() else {return}
+                        
+                        firestoreMarketRef.setData(dict) {
+                            (error) in
+                            if error != nil {
+                                onError(error!.localizedDescription)
+                                return
+                            }
+                            
+                            MarketService.M_TimelineUserId(userId: userId).collection("m_timeline").document(postId).setData(dict)
+                            
+                            MarketService.M_Allposts.document(postId).setData(dict)
+                            onSuccess()
+                        }
+                    }
+                }
+            }
+        }
+    
+    // post 내용 저장하는 함수 생성 끝
+    }
 }

@@ -29,7 +29,7 @@ struct FormField: View {
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 .disableAutocorrection(true)
                 .autocapitalization(.none)
-            }.overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.pink, lineWidth: 4)).padding()
+            }.overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.pink, lineWidth: 2)).padding()
         }
     }
 }

@@ -40,11 +40,13 @@ struct CustomTabView: View {
         
         NavigationView{
             TabView(selection: $selectedTab) {
-                Main()
+                Home()
                     .tag("house.fill")
+                    .navigationBarHidden(true)
+                    .ignoresSafeArea(.all, edges: .bottom)
                 Search()
                     .tag("magnifyingglass")
-                Post()
+                MarketPost()
                     .tag("camera.viewfinder")
                 Notifications()
                     .tag("heart.fill")
@@ -52,8 +54,10 @@ struct CustomTabView: View {
                     .tag("person.fill")
             }
         }.accentColor(.pink)
+        .navigationBarHidden(true)
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         .ignoresSafeArea(.all, edges: .bottom)
+        
         
         HStack(spacing: 0) {
             ForEach(tabs, id: \.self) {

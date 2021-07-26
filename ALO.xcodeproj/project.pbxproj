@@ -15,6 +15,15 @@
 		445F5AF7268DAD8F004ABE50 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AF6268DAD8F004ABE50 /* SearchBar.swift */; };
 		445F5AF9268DAE3C004ABE50 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AF8268DAE3C004ABE50 /* SearchService.swift */; };
 		445F5AFB268DB094004ABE50 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AFA268DB094004ABE50 /* UserProfile.swift */; };
+		445F5AFF268DCCBA004ABE50 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5AFE268DCCBA004ABE50 /* Home.swift */; };
+		445F5B01268DCF6F004ABE50 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B00268DCF6F004ABE50 /* ModelData.swift */; };
+		445F5B05268DD2C3004ABE50 /* TabButton2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B04268DD2C3004ABE50 /* TabButton2.swift */; };
+		445F5B07268DD4D2004ABE50 /* BagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B06268DD4D2004ABE50 /* BagView.swift */; };
+		445F5B09268DD6EA004ABE50 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B08268DD6EA004ABE50 /* DetailView.swift */; };
+		445F5B0D268DD83B004ABE50 /* MarketPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B0C268DD83B004ABE50 /* MarketPostService.swift */; };
+		445F5B0F268DD922004ABE50 /* MarketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B0E268DD922004ABE50 /* MarketModel.swift */; };
+		445F5B11268DDA21004ABE50 /* MarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B10268DDA21004ABE50 /* MarketService.swift */; };
+		445F5B15268DE089004ABE50 /* MarketPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F5B14268DE089004ABE50 /* MarketPost.swift */; };
 		447EE6CF268AB94A00658654 /* ALOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6CE268AB94A00658654 /* ALOApp.swift */; };
 		447EE6D1268AB94A00658654 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE6D0268AB94A00658654 /* ContentView.swift */; };
 		447EE6D3268AB94D00658654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447EE6D2268AB94D00658654 /* Assets.xcassets */; };
@@ -57,6 +66,15 @@
 		445F5AF6268DAD8F004ABE50 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		445F5AF8268DAE3C004ABE50 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		445F5AFA268DB094004ABE50 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		445F5AFE268DCCBA004ABE50 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		445F5B00268DCF6F004ABE50 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		445F5B04268DD2C3004ABE50 /* TabButton2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton2.swift; sourceTree = "<group>"; };
+		445F5B06268DD4D2004ABE50 /* BagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagView.swift; sourceTree = "<group>"; };
+		445F5B08268DD6EA004ABE50 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		445F5B0C268DD83B004ABE50 /* MarketPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPostService.swift; sourceTree = "<group>"; };
+		445F5B0E268DD922004ABE50 /* MarketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketModel.swift; sourceTree = "<group>"; };
+		445F5B10268DDA21004ABE50 /* MarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketService.swift; sourceTree = "<group>"; };
+		445F5B14268DE089004ABE50 /* MarketPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPost.swift; sourceTree = "<group>"; };
 		447EE6CB268AB94A00658654 /* ALO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		447EE6CE268AB94A00658654 /* ALOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALOApp.swift; sourceTree = "<group>"; };
 		447EE6D0268AB94A00658654 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +176,8 @@
 				44C07A86268D75DF00FBC2BB /* ProfileService.swift */,
 				44C07A88268D76A400FBC2BB /* PostCardService.swift */,
 				445F5AF8268DAE3C004ABE50 /* SearchService.swift */,
+				445F5B0C268DD83B004ABE50 /* MarketPostService.swift */,
+				445F5B10268DDA21004ABE50 /* MarketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -168,6 +188,8 @@
 				447EE6E9268ABAD100658654 /* UserModel.swift */,
 				443E7417268B32F500E650AF /* Item.swift */,
 				44C63551268B541900D80205 /* PostModel.swift */,
+				445F5B00268DCF6F004ABE50 /* ModelData.swift */,
+				445F5B0E268DD922004ABE50 /* MarketModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				447EE6ED268ABB1600658654 /* SignInView.swift */,
+				445F5AFE268DCCBA004ABE50 /* Home.swift */,
 				447EE6F1268ABB4500658654 /* SignUpView.swift */,
 				447EE6F3268ABB4F00658654 /* HomeView.swift */,
 				447EE6F5268ABB5A00658654 /* Search.swift */,
@@ -196,6 +219,10 @@
 				44BD2496268B09F9004DB80A /* LoadingScreen.swift */,
 				445F5AF2268DA1CA004ABE50 /* SNSSignUpView.swift */,
 				445F5AFA268DB094004ABE50 /* UserProfile.swift */,
+				445F5B04268DD2C3004ABE50 /* TabButton2.swift */,
+				445F5B06268DD4D2004ABE50 /* BagView.swift */,
+				445F5B08268DD6EA004ABE50 /* DetailView.swift */,
+				445F5B14268DE089004ABE50 /* MarketPost.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +402,7 @@
 				44C07A8D268D853E00FBC2BB /* PostCardImage.swift in Sources */,
 				44C63552268B541900D80205 /* PostModel.swift in Sources */,
 				447EE6E3268ABA9A00658654 /* AuthService.swift in Sources */,
+				445F5B0D268DD83B004ABE50 /* MarketPostService.swift in Sources */,
 				447EE6FC268ABB7400658654 /* Profile.swift in Sources */,
 				447EE6FE268ABBB700658654 /* FormField.swift in Sources */,
 				447EE6F0268ABB3A00658654 /* Extensions.swift in Sources */,
@@ -387,18 +415,26 @@
 				44C07A8F268D87A000FBC2BB /* PostCard.swift in Sources */,
 				447EE6F4268ABB4F00658654 /* HomeView.swift in Sources */,
 				44C07A89268D76A400FBC2BB /* PostCardService.swift in Sources */,
+				445F5B07268DD4D2004ABE50 /* BagView.swift in Sources */,
+				445F5B11268DDA21004ABE50 /* MarketService.swift in Sources */,
+				445F5B01268DCF6F004ABE50 /* ModelData.swift in Sources */,
 				445F5AF7268DAD8F004ABE50 /* SearchBar.swift in Sources */,
 				44C07A8B268D7C3F00FBC2BB /* TransParentButtonModifiers.swift in Sources */,
 				447EE6D1268AB94A00658654 /* ContentView.swift in Sources */,
 				445F5AF9268DAE3C004ABE50 /* SearchService.swift in Sources */,
 				447EE6F2268ABB4500658654 /* SignUpView.swift in Sources */,
 				447EE6FA268ABB6D00658654 /* Notifications.swift in Sources */,
+				445F5B09268DD6EA004ABE50 /* DetailView.swift in Sources */,
 				447EE700268ABBC200658654 /* ButtonModifiers.swift in Sources */,
 				44C07A87268D75DF00FBC2BB /* ProfileService.swift in Sources */,
+				445F5AFF268DCCBA004ABE50 /* Home.swift in Sources */,
+				445F5B05268DD2C3004ABE50 /* TabButton2.swift in Sources */,
 				447EE6EA268ABAD100658654 /* UserModel.swift in Sources */,
 				447EE6F6268ABB5A00658654 /* Search.swift in Sources */,
 				447EE6EE268ABB1600658654 /* SignInView.swift in Sources */,
 				445F5AFB268DB094004ABE50 /* UserProfile.swift in Sources */,
+				445F5B0F268DD922004ABE50 /* MarketModel.swift in Sources */,
+				445F5B15268DE089004ABE50 /* MarketPost.swift in Sources */,
 				447EE6F8268ABB6300658654 /* Post.swift in Sources */,
 				447EE6CF268AB94A00658654 /* ALOApp.swift in Sources */,
 				44BD2497268B09F9004DB80A /* LoadingScreen.swift in Sources */,
